@@ -1,5 +1,6 @@
 require('dotenv').config()
 import errorMiddleware from './middlewares/error.middleware'
+import accessLogMiddleware from './middlewares/logger.middleware'   
 
 import express from 'express'
 import {api} from './routes/api'
@@ -8,6 +9,9 @@ const app = express()
 const port = process.env.PORT
 
 app.use(express.json())
+
+// Req and Res logger
+app.use(accessLogMiddleware)
 
 console.log(`Node environment: ${process.env.NODE_ENV}`)
 app.listen(port, () => {
