@@ -4,9 +4,9 @@
   "description": "basic setup for node api, using express js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "compile": "rimraf dist && tsc",
-    "start": "nodemon --exec ts-node index.ts --watch"
+    "start": "nodemon --exec ts-node server.ts --watch"
   },
   "repository": {
     "type": "git",
@@ -46,7 +46,12 @@
     "create-express-boilerplate": "bin/installer.js"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/supertest": "^2.0.11",
+    "jest": "^27.2.5",
     "nodemon": "^2.0.13",
+    "supertest": "^6.1.6",
+    "ts-jest": "^27.0.7",
     "ts-node": "^10.2.1"
   }
 }
