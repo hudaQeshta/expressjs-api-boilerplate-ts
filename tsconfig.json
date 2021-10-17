@@ -98,6 +98,13 @@
 	  "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
 	  "outDir": "./dist",
 	  "rootDir": "./"
-	}
+	},
+	"include": [
+        "/**/*.ts",
+        "/**/*.js",
+        "/**/*.test.ts",
+        "/**/*.test.js",
+	    "/**/*.json"
+    ],
   }
   
