@@ -17,13 +17,6 @@ const accessLog = SimpleLogger.createSimpleLogger({
     timestampFormat: 'YYYY-MM-DD HH:mm:ss'
 });
 
-/**
- *
- * @param req
- * @param res
- * @param next
- * @returns {*}
- */
 const accessLogMiddleware = (): Record<string, any> => (req: Request, res: Response, next: NextFunction) => {
 
     let reqObject: RequestObjInterface = {
