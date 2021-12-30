@@ -1,6 +1,0 @@
-.env
-node_modules
-.idea
-dist/
-log/access/*
-log/error/*
