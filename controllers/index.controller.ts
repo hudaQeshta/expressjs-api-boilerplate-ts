@@ -1,5 +1,5 @@
-import { Request, Response } from 'express'
-import { successResponse } from '../helpers/methods'
+import { Request, Response } from "express"
+import { successResponse } from "../helpers/methods"
 
 /**
  *
@@ -8,12 +8,11 @@ import { successResponse } from '../helpers/methods'
  * @returns {Promise<void>}
  */
 export const index = async (req: Request, res: Response): Promise<void> => {
-    res.send(successResponse(
-        'Express JS API Boiler Plate working like a charm...',
-        {
-            data: 'here comes you payload...'
-        }
-    ))
+    res.send(
+        successResponse("Express JS API Boiler Plate working like a charm...", {
+            data: "here comes you payload..."
+        })
+    )
 }
 
 /**
@@ -23,11 +22,10 @@ export const index = async (req: Request, res: Response): Promise<void> => {
  * @returns {Promise<void>}
  */
 export const indexPost = async (req: Request, res: Response): Promise<void> => {
-    res.send(successResponse(
-        'Express JS API Boiler Plate post api working like a charm...',
-        {
-            data: 'here comes you payload...',
-            request: req.body,
-        }
-    ))
+    res.send(
+        successResponse("Express JS API Boiler Plate post api working like a charm...", {
+            data: "here comes you payload...",
+            request: req.body
+        })
+    )
 }

@@ -1,11 +1,11 @@
-import type { ErrorRequestHandler } from 'express'
-import * as methods from '../helpers/methods'
-import * as SimpleLogger from 'simple-node-logger'
+import type { ErrorRequestHandler } from "express"
+import * as methods from "../helpers/methods"
+import * as SimpleLogger from "simple-node-logger"
 
 const errorLog = SimpleLogger.createSimpleLogger({
-    logFilePath: './log/error/' + (new Date().toLocaleDateString().split('/').join('-')) + '.log',
-    timestampFormat: 'YYYY-MM-DD HH:mm:ss'
-});
+    logFilePath: "./log/error/" + new Date().toLocaleDateString().split("/").join("-") + ".log",
+    timestampFormat: "YYYY-MM-DD HH:mm:ss"
+})
 /**
  *
  * @param error

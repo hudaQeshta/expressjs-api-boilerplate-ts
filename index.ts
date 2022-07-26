@@ -1,10 +1,10 @@
-require('dotenv').config()
-import errorMiddleware from './middlewares/error.middleware'
-import accessLogMiddleware from './middlewares/logger.middleware'
+require("dotenv").config()
+import errorMiddleware from "./middlewares/error.middleware"
+import accessLogMiddleware from "./middlewares/logger.middleware"
 
-import express from 'express'
-import {cors} from 'cors-ts'
-import {api} from './routes/api'
+import express from "express"
+import { cors } from "cors-ts"
+import { api } from "./routes/api"
 
 const app = express()
 
